@@ -92,31 +92,6 @@ body {
 <head>
 </head>
 <body>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-    <style type="text/css"> 
-    body{font-size:20px;text-align:center}
-   #foo{ 
-     color:red; 
-    } 
-  </style> 
-<script type="text/javascript" src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
-<script  src="https://ipip.yy.com/get_ip_info.php"></script>
-<script type="text/javascript">
-$(document).ready(function(e) {
-var city=returnInfo.city||returnInfo.province||"";
-var  content= $("body").html().replace(/\{city\}/gi,city);
-  $("body").html(content)
-});
-</script>
-<script>
- </script>
-</head>
-<body>
-<div id="foo">来自{city}的朋友</div>
-</body>
 <script language=JavaScript>
 <!--
 var caution = false
@@ -205,6 +180,7 @@ document.write("你已累计访问本站" + visits + "次")
 	  </li>
 	   <embed src="/pour-time/img/nuanuande.mp3" hidden="true" autostart="true" loop="true">
 	</ul>
+	<script type="text/javascript" src="http://ip.chinaz.com/getip.aspx"></script>
 </script>
 </body>
 </html>
