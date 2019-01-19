@@ -66,6 +66,7 @@ body {
     background-color: #FFFFFF;
     background-image: url(tp/82b21be8-3805-43be-3055-aa5dc92abf09.jpg);
 }
+
 </style>
 </head>
 <body>
@@ -140,7 +141,18 @@ visits = 1
 else
 visits = parseInt(visits) + 1
 setCookie("counter", visits, now)
-document.write("你已累计访问本站" + visits + "次")
+document.write("你一累计访问" + visits + "次")
+</script>
+<!--setInterval实时显示时间-->
+<p id="time1" style="color: blueviolet;"></p>
+<script>
+    function mytime(){
+        var a = new Date();
+        var b = a.toLocaleTimeString();
+        var c = a.toLocaleDateString();
+        document.getElementById("time1").innerHTML = c+"&nbsp"+b;
+        }
+    setInterval(function() {mytime()},1000);
 </script>
 <br>
   <font face="华文彩云 "><font size="4"><font color="#40E0D0">网站导航</font><br>
@@ -170,7 +182,6 @@ document.write("你已累计访问本站" + visits + "次")
 	  <li>
 	  	<a href="http://thyrsi.com/t6/652/1547010658x2728278644.png" data-mfb-label="加我微信" class="mfb-component__button--child">
 		  <i class="mfb-component__child-icon ion-social-wordpress"></i>
-	  
 		</a>
 	  </li>
 	  <li>
@@ -180,7 +191,7 @@ document.write("你已累计访问本站" + visits + "次")
 	  </li>
 	   <embed src="/pour-time/img/nuanuande.mp3" hidden="true" autostart="true" loop="true">
 	</ul>
-	<script type="text/javascript" src="http://ip.chinaz.com/getip.aspx"></script>
 </script>
+
 </body>
 </html>
