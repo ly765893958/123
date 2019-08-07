@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="css/ionicons.min.css">
 <link href="dist/mfb.css" rel="stylesheet">
 <!--[if IE]>
+	<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
 <![endif]-->
 <!DOCTYPE html>
 <html>
@@ -23,7 +24,6 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link href="" rel="stylesheet">
-	<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_wh.js"></script>
 </head>
 <body>
     <script>
@@ -93,7 +93,10 @@ body {
 <head>
 </head>
 <body>
-<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_wh.js"></script>
+</script>
+<!--setInterval实时显示时间-->
+<p id="time1" style="color: blueviolet;"></p>
+<script>
     function mytime(){
         var a = new Date();
         var b = a.toLocaleTimeString();
@@ -150,13 +153,12 @@ visits = 1
 else
 visits = parseInt(visits) + 1
 setCookie("counter", visits, now)
-document.write("你已累计访问" + visits + "次")
+document.write("你一累计访问" + visits + "次")
 </script>
 <br>
   <font face="华文彩云 "><font size="4"><font color="#40E0D0">网站导航</font><br>
 	<a href="http://www.speedtest.cn/"><button class="btn-1">测网速</button></a>
 	<a href="http://www.yunshenjia.com/"><button class="btn-5">云神价</button></a>
-	<a href="http://xiyang.xpg1314.com/?cid=1&tid=11"><button class="btn-6">出货站</button></a>
 	<a href="https://ly765893958.github.io/41/ "><button class="btn-4">四合一图床</button></a>
 </div>
 <!-- Vidage init -->
